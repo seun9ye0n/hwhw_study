@@ -1,0 +1,206 @@
+c
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <<title>☕</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: #e9ecef;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: "din"
+      }
+
+      li a:hover:not(.active) {
+        background-color: #dee2e6;
+      }
+
+      .active {
+        background-color: #5c7cfa;
+      }
+
+      body {
+        background-color: #f8f9fa;
+      }
+
+      h1 {
+        font-size: 40px;
+        color: black;
+      }
+
+
+      p.sanserif {
+        font-family: "din", sanss-serif;
+        text-align: center;
+      }
+
+      p.sanserif2 {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+      }
+
+
+      li {
+        display: inline;
+      }
+    </style>
+</head>
+
+<body>
+
+
+  <ul>
+    <li><a href="1.home.html">home</a></li>
+    <li><a href="2.music.html">music</a></li>
+    <li><a href="3.book.html">book</a></li>
+    <li><a href="4.scrap.html">scrap</a></li>
+    <li><a class="active" href="5.cat.html">cat</a></li>
+  </ul>
+
+
+  <br><br><br><br>
+
+  <h1>
+    <p class="sanserif">
+      💙🐱💙</p>
+  </h1>
+
+
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <h2>
+      <p class="sanserif">
+        칸쵸 <br>
+        @khan._.choh</p>
+    </h2>
+
+    <h4>
+      <p class="sanserif2">
+        건강하고 즐겁고 행복하캣</p>
+    </h4>
+
+    <br><br><br><br>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+      <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens
+        smaller than 500px, the images will stack vertically (100%).</p>
+      <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+    </div>
+
+
+
+
+
+
+  </body>
+
+</html>
