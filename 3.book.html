@@ -3,89 +3,154 @@
 
 <head>
   <meta charset="utf-8">
-  <<title>☕</title>
+  <title>☕</title>
 
-    <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        top: 0;
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #e9ecef;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "din"
+    }
+
+    li a:hover:not(.active) {
+      background-color: #dee2e6;
+    }
+
+    .active {
+      background-color: #5c7cfa;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: black;
+    }
+
+
+    p.sanserif {
+      font-family: "din", sanss-serif;
+      text-align: center;
+    }
+
+    p.serif {
+      font-family: "garamond", serif;
+      font-style: italic;
+      text-align: center;
+    }
+
+    li {
+      display: inline;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+
+
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+      .column {
         width: 100%;
-        overflow: hidden;
-        background-color: #e9ecef;
       }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-family: "din"
-      }
-
-      li a:hover:not(.active) {
-        background-color: #dee2e6;
-      }
-
-      .active {
-        background-color: #5c7cfa;
-      }
-
-      body {
-        background-color: #f8f9fa;
-      }
-
-      h1 {
-        font-size: 40px;
-        color: black;
-      }
-
-
-      p.sanserif {
-        font-family: "din", sanss-serif;
-        text-align: center;
-      }
-
-      p.serif {
-        font-family: "garamond", serif;
-        font-style: italic;
-        text-align: center;
-      }
-
-      li {
-        display: inline;
-      }
-    </style>
+    }
+  </style>
 </head>
 
 <body>
-
-
   <ul>
     <li><a href="1.home.html">home</a></li>
     <li><a href="2.music.html">music</a></li>
     <li><a class="active" href="3.book.html">book</a></li>
     <li><a href="4.scrap.html">scrap</a></li>
     <li><a href="5.cat.html">cat</a></li>
+    <li><a href="6.reference.html">reference</a></li>
   </ul>
 
+    <br><br><br><br>
 
-  <br><br><br><br>
+    <h1>
+      <p class="sanserif">
+        📚</p>
+    </h1>
 
-  <h1>
-    <p class="sanserif">
-      📚</p>
-  </h1>
+    <br><br><br>
 
+  <div class="row">
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+        eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
 
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+        eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
 
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+        eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+  </div>
 
 </body>
 
